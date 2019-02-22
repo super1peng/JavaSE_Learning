@@ -19,9 +19,9 @@ Java原始码的扩展名.java，经过编译程序翻译为扩展名为.class�
 
 Java程序理想上并不用理会真正执行于哪个平台，只要知道如何执行JVM就可以了。至于JVM实际上如何与底层平台进行沟通，则是JVM自己的事情。JVM就相当于Java程序的操作系统。JVM负责Java程序的各种资源管理。
 
-<div style="align: center">
+<p align="center">
 <img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fwg3a7omeej30np0fjqaa.jpg" width=40% />  
-</div>
+</p>
 
 
 Java Runtime Environment就是Java执行环境，简称JRE，包括Java SE API与JVM。只要使用Java SE API中的链接库，在安装有JRE的计算机上就可以直接执行，无须额外在程序中再包装链接库，而可以由JRE直接提供。
