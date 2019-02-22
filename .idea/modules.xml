@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/01_Java_Generality/01_Java_Generality.iml" filepath="$PROJECT_DIR$/01_Java_Generality/01_Java_Generality.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_Java_Language/02_Java_grammar.iml" filepath="$PROJECT_DIR$/02_Java_Language/02_Java_grammar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03_Java_Object/03_Java_Object.iml" filepath="$PROJECT_DIR$/03_Java_Object/03_Java_Object.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE_Learning.iml" filepath="$PROJECT_DIR$/JavaSE_Learning.iml" />
     </modules>
   </component>

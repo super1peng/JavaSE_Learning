@@ -20,7 +20,7 @@ Java原始码的扩展名.java，经过编译程序翻译为扩展名为.class�
 Java程序理想上并不用理会真正执行于哪个平台，只要知道如何执行JVM就可以了。至于JVM实际上如何与底层平台进行沟通，则是JVM自己的事情。JVM就相当于Java程序的操作系统。JVM负责Java程序的各种资源管理。
 
 <p align="center">
-<img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fwg3a7omeej30np0fjqaa.jpg" width=40% />  
+<img src="https://ws4.sinaimg.cn/large/006tNbRwgy1fwg3a7omeej30np0fjqaa.jpg" width=60% />  
 </p>
 
 
