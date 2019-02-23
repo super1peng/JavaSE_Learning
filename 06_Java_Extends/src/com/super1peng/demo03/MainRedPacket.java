@@ -38,6 +38,7 @@ public class MainRedPacket {
         one.show();
         two.show();
         three.show();
-        System.out.println("=============================");
+        
+        System.out.println("Finish");
     }
 }
