@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/02_Java_Language/02_Java_grammar.iml" filepath="$PROJECT_DIR$/02_Java_Language/02_Java_grammar.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_Java_Object/03_Java_Object.iml" filepath="$PROJECT_DIR$/03_Java_Object/03_Java_Object.iml" />
       <module fileurl="file://$PROJECT_DIR$/04_Java_ComClass/04_Java_ComClass.iml" filepath="$PROJECT_DIR$/04_Java_ComClass/04_Java_ComClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/05_Java_String_Static_Array_Math/05_Java_String_Static_Array_Math.iml" filepath="$PROJECT_DIR$/05_Java_String_Static_Array_Math/05_Java_String_Static_Array_Math.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_Java_Extends/06_Java_Extends.iml" filepath="$PROJECT_DIR$/06_Java_Extends/06_Java_Extends.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE_Learning.iml" filepath="$PROJECT_DIR$/JavaSE_Learning.iml" />
     </modules>
   </component>
