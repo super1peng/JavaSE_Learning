@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6466e01e-15ce-4d93-b72e-72220a759aef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Java_Mysql/事务/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/09_Java_Mysql/事务/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Java_Mysql/基础内容/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/09_Java_Mysql/基础内容/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/09_Java_Mysql/约束/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/09_Java_Mysql/约束/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ReadMe.md" beforeDir="false" afterPath="$PROJECT_DIR$/ReadMe.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -43,13 +38,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="2759" />
-          <entry key="md" value="7388" />
+          <entry key="md" value="7403" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2785" />
-          <entry key="Markdown" value="7362" />
+          <entry key="Markdown" value="7377" />
         </counts>
       </usages-collector>
     </session>
@@ -60,8 +55,8 @@
         <entry file="file://$PROJECT_DIR$/ReadMe.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+              <first_editor relative-caret-position="270">
+                <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
               </first_editor>
               <second_editor />
             </state>
@@ -176,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551247322236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551248807977" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -301,12 +296,12 @@
       <workItem from="1550825349958" duration="7920000" />
       <workItem from="1550905966025" duration="10503000" />
       <workItem from="1551161122189" duration="3399000" />
-      <workItem from="1551235767415" duration="5576000" />
+      <workItem from="1551235767415" duration="6175000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28357000" />
+    <option name="totallyTimeSpent" value="28956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-402" y="-1057" width="1920" height="1057" extended-state="0" />
@@ -827,8 +822,8 @@
     <entry file="file://$PROJECT_DIR$/ReadMe.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="240">
-            <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
           </first_editor>
           <second_editor />
         </state>
