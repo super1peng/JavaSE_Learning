@@ -53,13 +53,13 @@
 					t1.`dept_id` = t2.`id`;
 
 
-​	
 			2. 显式内连接：
 				* 语法： select 字段列表 from 表名1 [inner] join 表名2 on 条件
 				* 例如：
 					* SELECT * FROM emp INNER JOIN dept ON emp.`dept_id` = dept.`id`;	
 					* SELECT * FROM emp JOIN dept ON emp.`dept_id` = dept.`id`;	
 	
+
 			3. 内连接查询：
 				1. 从哪些表中查询数据
 				2. 条件是什么
@@ -131,13 +131,13 @@
 
 ​				
 ​				
-				-- 职务表，职务名称，职务描述
-				CREATE TABLE job (
-				  id INT PRIMARY KEY,
-				  jname VARCHAR(20),
-				  description VARCHAR(50)
-				);
-				
+​				-- 职务表，职务名称，职务描述
+​				CREATE TABLE job (
+​				  id INT PRIMARY KEY,
+​				  jname VARCHAR(20),
+​				  description VARCHAR(50)
+​				);
+​				
 				-- 添加4个职务
 				INSERT INTO job (id, jname, description) VALUES
 				(1, '董事长', '管理整个公司，接单'),
@@ -148,20 +148,20 @@
 
 ​				
 ​				
-				-- 员工表
-				CREATE TABLE emp (
-				  id INT PRIMARY KEY, -- 员工id
-				  ename VARCHAR(50), -- 员工姓名
-				  job_id INT, -- 职务id
-				  mgr INT , -- 上级领导
-				  joindate DATE, -- 入职日期
-				  salary DECIMAL(7,2), -- 工资
-				  bonus DECIMAL(7,2), -- 奖金
-				  dept_id INT, -- 所在部门编号
-				  CONSTRAINT emp_jobid_ref_job_id_fk FOREIGN KEY (job_id) REFERENCES job (id),
-				  CONSTRAINT emp_deptid_ref_dept_id_fk FOREIGN KEY (dept_id) REFERENCES dept (id)
-				);
-				
+​				-- 员工表
+​				CREATE TABLE emp (
+​				  id INT PRIMARY KEY, -- 员工id
+​				  ename VARCHAR(50), -- 员工姓名
+​				  job_id INT, -- 职务id
+​				  mgr INT , -- 上级领导
+​				  joindate DATE, -- 入职日期
+​				  salary DECIMAL(7,2), -- 工资
+​				  bonus DECIMAL(7,2), -- 奖金
+​				  dept_id INT, -- 所在部门编号
+​				  CONSTRAINT emp_jobid_ref_job_id_fk FOREIGN KEY (job_id) REFERENCES job (id),
+​				  CONSTRAINT emp_deptid_ref_dept_id_fk FOREIGN KEY (dept_id) REFERENCES dept (id)
+​				);
+​				
 				-- 添加员工
 				INSERT INTO emp(id,ename,job_id,mgr,joindate,salary,bonus,dept_id) VALUES 
 				(1001,'孙悟空',4,1004,'2000-12-17','8000.00',NULL,20),
@@ -182,13 +182,13 @@
 
 ​				
 ​				
-				-- 工资等级表
-				CREATE TABLE salarygrade (
-				  grade INT PRIMARY KEY,   -- 级别
-				  losalary INT,  -- 最低工资
-				  hisalary INT -- 最高工资
-				);
-				
+​				-- 工资等级表
+​				CREATE TABLE salarygrade (
+​				  grade INT PRIMARY KEY,   -- 级别
+​				  losalary INT,  -- 最低工资
+​				  hisalary INT -- 最高工资
+​				);
+​				
 				-- 添加5个工资等级
 				INSERT INTO salarygrade(grade,losalary,hisalary) VALUES 
 				(1,7000,12000),
@@ -220,13 +220,13 @@
 
 ​				
 ​				
-				-- 2.查询员工编号，员工姓名，工资，职务名称，职务描述，部门名称，部门位置
-				/*
-					分析：
-						1. 员工编号，员工姓名，工资 emp  职务名称，职务描述 job  部门名称，部门位置 dept
-						2. 条件： emp.job_id = job.id and emp.dept_id = dept.id
-				*/
-				
+​				-- 2.查询员工编号，员工姓名，工资，职务名称，职务描述，部门名称，部门位置
+​				/*
+​					分析：
+​						1. 员工编号，员工姓名，工资 emp  职务名称，职务描述 job  部门名称，部门位置 dept
+​						2. 条件： emp.job_id = job.id and emp.dept_id = dept.id
+​				*/
+​				
 				SELECT 
 					t1.`id`, -- 员工编号
 					t1.`ename`, -- 员工姓名
@@ -257,12 +257,12 @@
 
 ​				
 ​				
-				-- 4.查询员工姓名，工资，职务名称，职务描述，部门名称，部门位置，工资等级
-				/*
-					分析：
-						1. 员工姓名，工资 emp ， 职务名称，职务描述 job 部门名称，部门位置，dept  工资等级 salarygrade
-						2. 条件： emp.job_id = job.id and emp.dept_id = dept.id and emp.salary BETWEEN salarygrade.losalary and salarygrade.hisalary
-							
+​				-- 4.查询员工姓名，工资，职务名称，职务描述，部门名称，部门位置，工资等级
+​				/*
+​					分析：
+​						1. 员工姓名，工资 emp ， 职务名称，职务描述 job 部门名称，部门位置，dept  工资等级 salarygrade
+​						2. 条件： emp.job_id = job.id and emp.dept_id = dept.id and emp.salary BETWEEN salarygrade.losalary and salarygrade.hisalary
+​							
 				*/
 				SELECT 
 					t1.`ename`,
@@ -282,8 +282,8 @@
 
 ​				
 ​				
-				-- 5.查询出部门编号、部门名称、部门位置、部门人数
-				
+​				-- 5.查询出部门编号、部门名称、部门位置、部门人数
+​				
 				/*
 					分析：
 						1.部门编号、部门名称、部门位置 dept 表。 部门人数 emp表
@@ -304,8 +304,8 @@
 
 
 ​				
-				-- 6.查询所有员工的姓名及其直接上级的姓名,没有领导的员工也需要查询
-				
+​				-- 6.查询所有员工的姓名及其直接上级的姓名,没有领导的员工也需要查询
+​				
 				/*
 					分析：
 						1.姓名 emp， 直接上级的姓名 emp
@@ -357,10 +357,10 @@
 
 
 ​			
-			SELECT * FROM account;
-			UPDATE account SET balance = 1000;
-			-- 张三给李四转账 500 元
-			
+​			SELECT * FROM account;
+​			UPDATE account SET balance = 1000;
+​			-- 张三给李四转账 500 元
+​			
 			-- 0. 开启事务
 			START TRANSACTION;
 			-- 1. 张三账户 -500

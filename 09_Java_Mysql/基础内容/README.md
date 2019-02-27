@@ -28,14 +28,14 @@ Structured Query Language：结构化查询语言；
 3. MySQL 数据库的 SQL 语句不区分大小写，关键字建议使用大写。
 4. 3 种注释： 单行注释: -- 注释内容 或 # 注释内容(mysql 特有) ；多行注释: /* 注释 */
 
-##### 3 SQL分类
+#### 3 SQL分类
 
 * DDL(Data Definition Language)数据定义语言，用来定义数据库对象：数据库，表，列等。关键字：create, drop,alter 等；
 * DML(Data Manipulation Language)数据操作语言，用来对数据库中表的数据进行增删改。关键字：insert, delete, update 等；
 * DQL(Data Query Language)数据查询语言，用来查询数据库中表的记录(数据)。关键字：select, where 等；
 * DCL(Data Control Language)数据控制语言(了解)，用来定义数据库的访问权限和安全级别，及创建用户。关键字：GRANT， REVOKE 等；
 
-#### 3.1 DDL操作数据库、表
+##### 3.1 DDL操作数据库、表
 
 操作数据库：CRUD
 ```
@@ -139,7 +139,7 @@ Structured Query Language：结构化查询语言；
     * drop table  if exists 表名 ;
 ```
 
-#### 3.2 增删改表中数据(DML)
+##### 3.2 增删改表中数据(DML)
 ```
 1. 添加数据：
 	* 语法：
@@ -165,7 +165,7 @@ Structured Query Language：结构化查询语言；
 		1. 如果不加任何条件，则会将表中所有记录全部修改。
 ```
 
-#### 3.3 查询表中记录(DQL)
+##### 3.3 查询表中记录(DQL)
 ```
 1. 语法：
 	select
@@ -241,19 +241,19 @@ Structured Query Language：结构化查询语言；
 			SELECT * FROM student WHERE english IS NULL;
 			
 			
-                        -- 查询英语成绩不为null
-                        SELECT * FROM student WHERE english  IS NOT NULL;	
-                        
-                        -- 查询姓马的有哪些？ like
-                        SELECT * FROM student WHERE NAME LIKE '马%';
-                        -- 查询姓名第二个字是化的人
-                        
-                        SELECT * FROM student WHERE NAME LIKE "_化%";
-                        
-                        -- 查询姓名是3个字的人
-                        SELECT * FROM student WHERE NAME LIKE '___';
-                        
-                        -- 查询姓名中包含德的人
-                        SELECT * FROM student WHERE NAME LIKE '%德%';	
+            -- 查询英语成绩不为null
+            SELECT * FROM student WHERE english  IS NOT NULL;	
+            
+            -- 查询姓马的有哪些？ like
+            SELECT * FROM student WHERE NAME LIKE '马%';
+            -- 查询姓名第二个字是化的人
+            
+            SELECT * FROM student WHERE NAME LIKE "_化%";
+            
+            -- 查询姓名是3个字的人
+            SELECT * FROM student WHERE NAME LIKE '___';
+            
+            -- 查询姓名中包含德的人
+            SELECT * FROM student WHERE NAME LIKE '%德%';	
 ```
 

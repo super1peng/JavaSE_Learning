@@ -9,7 +9,7 @@
 	
 		* 注意：
 			* 如果有多个排序条件，则当前边的条件值一样时，才会判断第二条件。
-
+	
 	2. 聚合函数：将一列数据作为一个整体，进行纵向的计算。
 		1. count：计算个数
 			1. 一般选择非空的列：主键
@@ -18,7 +18,7 @@
 		3. min：计算最小值
 		4. sum：计算和
 		5. avg：计算平均值
-
+	
 		* 注意：聚合函数的计算，排除null值。
 			解决方案：
 				1. 选择不包含非空的列进行计算
@@ -50,11 +50,11 @@
 
 
 ​			
-	4. 分页查询
-		1. 语法：limit 开始的索引,每页查询的条数;
-		2. 公式：开始的索引 = （当前的页码 - 1） * 每页显示的条数
-			-- 每页显示3条记录 
-	
+​	4. 分页查询
+​		1. 语法：limit 开始的索引,每页查询的条数;
+​		2. 公式：开始的索引 = （当前的页码 - 1） * 每页显示的条数
+​			-- 每页显示3条记录 
+​	
 			SELECT * FROM student LIMIT 0,3; -- 第1页
 			
 			SELECT * FROM student LIMIT 3,3; -- 第2页
@@ -86,19 +86,19 @@
 
 
 ​	
-	* 唯一约束：unique，值不能重复
-		1. 创建表时，添加唯一约束
-			CREATE TABLE stu(
-				id INT,
-				phone_number VARCHAR(20) UNIQUE -- 添加了唯一约束
-			
+​	* 唯一约束：unique，值不能重复
+​		1. 创建表时，添加唯一约束
+​			CREATE TABLE stu(
+​				id INT,
+​				phone_number VARCHAR(20) UNIQUE -- 添加了唯一约束
+​			
 			);
 			* 注意mysql中，唯一约束限定的列的值可以有多个null
 
 
 ​		
-		2. 删除唯一约束
-		
+​		2. 删除唯一约束
+​		
 			ALTER TABLE stu DROP INDEX phone_number;
 		
 		3. 在创建表后，添加唯一约束
@@ -134,10 +134,10 @@
 
 
 ​			
-			3. 删除自动增长
-			ALTER TABLE stu MODIFY id INT;
-			4. 添加自动增长
-			ALTER TABLE stu MODIFY id INT AUTO_INCREMENT;
+​			3. 删除自动增长
+​			ALTER TABLE stu MODIFY id INT;
+​			4. 添加自动增长
+​			ALTER TABLE stu MODIFY id INT AUTO_INCREMENT;
 
 
 	* 外键约束：foreign key,让表于表产生关系，从而保证数据的正确性。
@@ -157,20 +157,20 @@
 
 
 ​		
-		4. 级联操作
-			1. 添加级联操作
-				语法：ALTER TABLE 表名 ADD CONSTRAINT 外键名称 
-						FOREIGN KEY (外键字段名称) REFERENCES 主表名称(主表列名称) ON UPDATE CASCADE ON DELETE CASCADE  ;
-			2. 分类：
-				1. 级联更新：ON UPDATE CASCADE 
-				2. 级联删除：ON DELETE CASCADE 
+​		4. 级联操作
+​			1. 添加级联操作
+​				语法：ALTER TABLE 表名 ADD CONSTRAINT 外键名称 
+​						FOREIGN KEY (外键字段名称) REFERENCES 主表名称(主表列名称) ON UPDATE CASCADE ON DELETE CASCADE  ;
+​			2. 分类：
+​				1. 级联更新：ON UPDATE CASCADE 
+​				2. 级联删除：ON DELETE CASCADE 
 
 
 ## 数据库的设计
 
 	1. 多表之间的关系
 		1. 分类：
-			1. 一对一(了解)：
+			1. 一对一：
 				* 如：人和身份证
 				* 分析：一个人只有一个身份证，一个身份证只能对应一个人
 			2. 一对多(多对一)：
@@ -256,9 +256,9 @@
 
 
 ​		
-	2. 数据库设计的范式
-		* 概念：设计数据库时，需要遵循的一些规范。要遵循后边的范式要求，必须先遵循前边的所有范式要求
-	
+​	2. 数据库设计的范式
+​		* 概念：设计数据库时，需要遵循的一些规范。要遵循后边的范式要求，必须先遵循前边的所有范式要求
+​	
 			设计关系数据库时，遵从不同的规范要求，设计出合理的关系型数据库，这些不同的规范要求被称为不同的范式，各种范式呈递次规范，越高的范式数据库冗余越小。
 			目前关系数据库有六种范式：第一范式（1NF）、第二范式（2NF）、第三范式（3NF）、巴斯-科德范式（BCNF）、第四范式(4NF）和第五范式（5NF，又称完美范式）。
 	
@@ -284,9 +284,9 @@
 
 ## 数据库的备份和还原
 	* 语法：
-        * 备份： mysqldump -u用户名 -p密码 数据库名称 > 保存的路径
-        * 还原：
-            1. 登录数据库
-            2. 创建数据库
-            3. 使用数据库
-            4. 执行文件。source 文件路径
+	    * 备份： mysqldump -u用户名 -p密码 数据库名称 > 保存的路径
+	    * 还原：
+	        1. 登录数据库
+	        2. 创建数据库
+	        3. 使用数据库
+	        4. 执行文件。source 文件路径
