@@ -14,7 +14,7 @@ public class Demo02Calendar {
     /*
     Calendar类的常用成员方法:
         public int get(int field)：返回给定日历字段的值。
-        public void set(int field, int value)：将给定的日历字段设置为给定值。
+        public void Set(int field, int value)：将给定的日历字段设置为给定值。
         public abstract void add(int field, int amount)：根据日历的规则，为给定的日历字段添加或减去指定的时间量。
         public Date getTime()：返回一个表示此Calendar时间值（从历元到现在的毫秒偏移量）的Date对象。
     成员方法的参数:
@@ -43,7 +43,7 @@ public class Demo02Calendar {
     }
 
     /*
-        public void set(int field, int value)：将给定的日历字段设置为给定值。
+        public void Set(int field, int value)：将给定的日历字段设置为给定值。
         参数:
             int field:传递指定的日历字段(YEAR,MONTH...)
             int value:给指定字段设置的值
