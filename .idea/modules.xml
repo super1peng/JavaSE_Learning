@@ -20,6 +20,10 @@
       <module fileurl="file://$PROJECT_DIR$/16_Java_FileAndRecursion/16_Java_FileAndRecursion.iml" filepath="$PROJECT_DIR$/16_Java_FileAndRecursion/16_Java_FileAndRecursion.iml" />
       <module fileurl="file://$PROJECT_DIR$/17_Java_IOStream/17_Java_IOStream.iml" filepath="$PROJECT_DIR$/17_Java_IOStream/17_Java_IOStream.iml" />
       <module fileurl="file://$PROJECT_DIR$/18_Java_Properties/18_Java_Properties.iml" filepath="$PROJECT_DIR$/18_Java_Properties/18_Java_Properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/19_Java_BufferPrintTransfer/19_Java_BufferPrintTransfer.iml" filepath="$PROJECT_DIR$/19_Java_BufferPrintTransfer/19_Java_BufferPrintTransfer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/20_Java_Socket/20_Java_Socket.iml" filepath="$PROJECT_DIR$/20_Java_Socket/20_Java_Socket.iml" />
+      <module fileurl="file://$PROJECT_DIR$/21_Java_FunctionalInterface/21_Java_FunctionalInterface.iml" filepath="$PROJECT_DIR$/21_Java_FunctionalInterface/21_Java_FunctionalInterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/22_Java_StreamAndReference/22_Java_StreamAndReference.iml" filepath="$PROJECT_DIR$/22_Java_StreamAndReference/22_Java_StreamAndReference.iml" />
       <module fileurl="file://$PROJECT_DIR$/29_Java_Mysql/29_Java_Mysql.iml" filepath="$PROJECT_DIR$/29_Java_Mysql/29_Java_Mysql.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaSE_Learning.iml" filepath="$PROJECT_DIR$/JavaSE_Learning.iml" />
     </modules>
